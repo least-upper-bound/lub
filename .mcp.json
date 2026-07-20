@@ -1,0 +1,22 @@
+{
+  "name": "lub",
+  "version": "0.1.0",
+  "description": "2 つの概念の共通祖先を探す Web サービス",
+  "tools": [
+    {
+      "name": "typecheck",
+      "description": "TypeScript 型チェックを実行",
+      "command": "npm run typecheck"
+    },
+    {
+      "name": "dev",
+      "description": "ローカル開発サーバーを起動",
+      "command": "npm run dev:local"
+    },
+    {
+      "name": "deploy",
+      "description": "Cloudflare Workers へデプロイ",
+      "command": "npm run deploy"
+    }
+  ]
+}

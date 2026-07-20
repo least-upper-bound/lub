@@ -1,0 +1,8 @@
+{
+  "project": {
+    "name": "LUB",
+    "description": "2 つの概念の共通祖先を探す Web サービス",
+    "entryPoints": ["src/index.ts"],
+    "docs": ["README.md", "spec.md", "architecture.md"]
+  }
+}
