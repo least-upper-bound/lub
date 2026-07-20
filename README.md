@@ -12,7 +12,7 @@
 | -------------- | --------------------------------- |
 | フレームワーク | Hono (Cloudflare Workers アダプタ) |
 | UI             | Hono JSX (`hono/jsx`)             |
-| LLM            | Groq API `llama-3.1-8b-instant`   |
+| LLM            | Groq API `llama-3.3-70b-versatile` |
 | キャッシュ     | なし                              |
 | 監視           | `wrangler tail` + `console.error` |
 

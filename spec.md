@@ -29,7 +29,7 @@
   - 結果カード（concept / reason / confidence）
   - 例示ペアチップ 4〜6 組
 - **`~/project/rag` 準拠のライトモード・携帯特化 UI**（max-width 440px 想定）
-- **Groq API `llama-3.1-8b-instant` JSON mode による概念生成**
+- **Groq API `llama-3.3-70b-versatile` JSON mode による概念生成**
 - **入力バリデーション**（必須、1〜100 文字、同一入力許容、多言語対応）
 - **エラーハンドリング**（400 / 429 / 500 別メッセージ）
 
@@ -47,7 +47,7 @@
 | ------------ | ----------------------------------- |
 | フレームワーク | Hono (Cloudflare Workers アダプタ)   |
 | UI           | Hono JSX (`hono/jsx`)               |
-| LLM          | Groq API `llama-3.1-8b-instant`     |
+| LLM          | Groq API `llama-3.3-70b-versatile`     |
 | キャッシュ   | なし                                |
 | 監視         | `wrangler tail` + `console.error`   |
 
@@ -84,7 +84,7 @@
 | 製品名              | LUB                                                                      |
 | UI 実装方式         | Hono JSX。`GET /` でフォーム + 結果表示の単一ページ                     |
 | UI ブランド         | `~/project/rag` 風ライトモード・携帯特化                                |
-| LLM プロバイダー    | Groq `llama-3.1-8b-instant` JSON mode                                    |
+| LLM プロバイダー    | Groq `llama-3.3-70b-versatile` JSON mode                                    |
 | 出力形式            | `{ concept: string, reason: string, confidence: number }`               |
 | 自信度              | 0.0 〜 1.0 の小数。0.7 未満は UI で警告注釈を表示                       |
 | エンドポイント      | `POST /lub`                                                              |
@@ -180,7 +180,7 @@
 
 1. リクエスト `conceptA` / `conceptB` を受け取る
 2. バリデーションを実行
-3. Groq `llama-3.1-8b-instant` を JSON mode で呼び出す
+3. Groq `llama-3.3-70b-versatile` を JSON mode で呼び出す
 4. レスポンスから `{ concept, reason, confidence }` を抽出
 5. 型ガードを通過したらクライアントに返す
 6. confidence < 0.7 の場合、結果は表示するが警告注釈を付ける
