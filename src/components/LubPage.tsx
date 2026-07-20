@@ -220,46 +220,48 @@ export const LubPage: FC = () => {
               </p>
 
               <form id="lub-form" class="mt-4 space-y-3">
-                <div>
-                  <label
-                    class="mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-500"
-                    for="concept-a"
-                  >
-                    概念 A
-                  </label>
-                  <input
-                    id="concept-a"
-                    name="conceptA"
-                    type="text"
-                    maxlength={100}
-                    placeholder="例: 犬"
-                    autocomplete="off"
-                    class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-3 text-[15px] leading-relaxed text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-100"
-                  />
-                </div>
-                <div>
-                  <label
-                    class="mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-500"
-                    for="concept-b"
-                  >
-                    概念 B
-                  </label>
-                  <input
-                    id="concept-b"
-                    name="conceptB"
-                    type="text"
-                    maxlength={100}
-                    placeholder="例: 猫"
-                    autocomplete="off"
-                    class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-3 text-[15px] leading-relaxed text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-100"
-                  />
+                <div class="flex gap-3">
+                  <div class="flex-1">
+                    <label
+                      class="mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-500"
+                      for="concept-a"
+                    >
+                      概念 A
+                    </label>
+                    <input
+                      id="concept-a"
+                      name="conceptA"
+                      type="text"
+                      maxlength={100}
+                      placeholder="例: 犬"
+                      autocomplete="off"
+                      class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-3 text-[15px] leading-relaxed text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-100"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <label
+                      class="mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-500"
+                      for="concept-b"
+                    >
+                      概念 B
+                    </label>
+                    <input
+                      id="concept-b"
+                      name="conceptB"
+                      type="text"
+                      maxlength={100}
+                      placeholder="例: 猫"
+                      autocomplete="off"
+                      class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-3 text-[15px] leading-relaxed text-slate-900 placeholder:text-slate-400 outline-none transition focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-100"
+                    />
+                  </div>
                 </div>
                 <button
                   id="submit-btn"
                   type="submit"
                   class="w-full rounded-2xl bg-indigo-700 px-4 py-3 text-[15px] font-semibold text-white transition hover:bg-indigo-800 active:bg-indigo-900 disabled:cursor-not-allowed disabled:opacity-60"
                 >
-                  共通祖先を探す
+                  LUBを探す
                 </button>
               </form>
             </section>
