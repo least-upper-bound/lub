@@ -1,0 +1,8 @@
+name = "lub"
+main = "src/index.ts"
+compatibility_date = "2025-05-01"
+compatibility_flags = ["nodejs_compat"]
+
+# ローカル開発時は .dev.vars に GROQ_API_KEY を設定する
+# [vars]
+# 公開してよい変数のみここに記載
